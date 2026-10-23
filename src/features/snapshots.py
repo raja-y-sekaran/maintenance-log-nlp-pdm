@@ -5,54 +5,22 @@ The label is whether a breakdown work order is raised for that asset in [t, t + 
 """
 from __future__ import annotations
 
-import re
 from bisect import bisect_left
 
 import numpy as np
 import pandas as pd
 
-SHORTHAND = {
-    r"\btemp\b": "temperature", r"\bvibn?\b": "vibration", r"\bbrg\b": "bearing", r"\bmech\b": "mechanical",
-    r"\bpress\b": "pressure", r"\bincr\b": "increasing", r"\brepl\b": "replaced", r"\bnrml\b": "normal",
-    r"\bhi\b": "high", r"\blo\b": "low", r"\blkg\b": "leak", r"\bvlv\b": "valve",
-}
-_ASSET_RE = re.compile(r"\b[a-z]{1,2}-\d{3,4}a?\b")
-
-
-def clean(text: str, fixes: dict | None = None) -> str:
-    t = str(text).lower()
-    for pat, rep in SHORTHAND.items():
-        t = re.sub(pat, rep, t)
-    t = _ASSET_RE.sub(" ", t)  # asset tags carry no meaning for the model
-    if fixes:
-        t = re.sub(r"[a-z]+", lambda m: fixes.get(m.group(0), m.group(0)), t)
-    return re.sub(r"\s+", " ", t).strip()
-
-
-def learn_typo_fixes(texts, min_ratio: float = 20.0) -> dict:
-    """Map a word to a much more frequent word that differs by one swapped pair of adjacent letters.
-    Learned from the plant's own text, so local vocabulary ('positioner', 'impeller') is respected."""
-    from collections import Counter
-    freq = Counter(w for t in texts for w in re.findall(r"[a-z]+", clean(t)))
-    fixes = {}
-    for w, n in freq.items():
-        if len(w) < 5:
-            continue
-        for i in range(len(w) - 1):
-            cand = w[:i] + w[i + 1] + w[i] + w[i + 2:]
-            if cand != w and freq.get(cand, 0) >= min_ratio * n:
-                fixes[w] = cand
-                break
-    return fixes
+from src.data.preprocess import clean, learn_typo_fixes
 
 
 def build_snapshots(logs: pd.DataFrame, register: pd.DataFrame, horizon: int = 30, freq: str = "7D",
-                    recent: int = 14, window: int = 60, vocab_until: str | None = None) -> pd.DataFrame:
+                    recent: int = 14, window: int = 60, vocab_until: str | None = None,
+                    fixes: dict | None = None) -> pd.DataFrame:
     """vocab_until: learn spelling fixes only from text before this date (keeps the test years unseen)."""
     logs = logs.copy()
     logs["date"] = pd.to_datetime(logs.date)
     src = logs if vocab_until is None else logs[logs.date < pd.Timestamp(vocab_until)]
-    fixes = learn_typo_fixes(src.text)
+    fixes = learn_typo_fixes(src.text) if fixes is None else fixes
     logs["clean"] = logs.text.map(lambda t: clean(t, fixes))
     start, end = logs.date.min() + pd.Timedelta(days=window), logs.date.max() - pd.Timedelta(days=horizon)
     dates = pd.date_range(start, end, freq=freq)
@@ -86,3 +54,16 @@ def build_snapshots(logs: pd.DataFrame, register: pd.DataFrame, horizon: int = 3
 
 NUMERIC = ["n_logs_recent", "n_logs_older", "days_since_breakdown", "days_since_corrective",
            "breakdowns_last_year", "equipment_age_yr"]
+
+
+def snapshot_from_entries(entries, fixes: dict, asset_type: str, criticality: str, equipment_age_yr: float,
+                          days_since_breakdown: float = 999, days_since_corrective: float = 999,
+                          breakdowns_last_year: int = 0, recent: int = 14, window: int = 60) -> pd.DataFrame:
+    """One snapshot row for a single asset from (days_ago, text) log entries, same features as training."""
+    rec = [clean(t, fixes) for d, t in entries if 0 < d <= recent]
+    old = [clean(t, fixes) for d, t in entries if recent < d <= window]
+    return pd.DataFrame([dict(asset_type=asset_type, criticality=criticality, text_recent=" | ".join(rec),
+                              text_older=" | ".join(old), n_logs_recent=len(rec), n_logs_older=len(old),
+                              days_since_breakdown=min(days_since_breakdown, 999),
+                              days_since_corrective=min(days_since_corrective, 999),
+                              breakdowns_last_year=breakdowns_last_year, equipment_age_yr=equipment_age_yr)])

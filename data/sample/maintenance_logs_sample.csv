@@ -1,0 +1,201 @@
+log_id,date,asset_id,source,wo_type,text
+L000001,2020-01-01,FV-1015,corrective_wo,breakdown,"Breakdown: valve stuck, FV-1015 could not control. Actuator overhauled."
+L000002,2020-01-01,K-2012,pm_task,,Guard refitted after inspection.
+L000003,2020-01-01,K-3006,operator_round,,LUBE OIL PRESSURE LOW ALARM CLEARED.
+L000004,2020-01-01,M-4009,pm_task,,Painting and insulation repair done.
+L000005,2020-01-01,M-5004A,pm_task,,"Running nrml, standby checked."
+L000006,2020-01-01,P-3031,operator_round,,"PM completed, no findings."
+L000007,2020-01-01,P-3036,pm_task,,Greased bearings as per PM.
+L000008,2020-01-01,P-3037,operator_round,,Area housekeeping done.
+L000009,2020-01-01,PT-2013,pm_task,,"Routine round, all normal."
+L000010,2020-01-02,FV-1021,pm_task,,Area housekeeping done.
+L000011,2020-01-02,FV-3010,operator_round,,Painting and insulation repair done.
+L000012,2020-01-02,K-5001,pm_task,,Greased bearings as per PM.
+L000013,2020-01-02,M-2010A,pm_task,,Oil topped up.
+L000014,2020-01-02,P-1030A,operator_round,,"noise heard, found loose guard, tightened."
+L000015,2020-01-02,P-3038A,operator_round,,"CHECKED, NO ABNORMALITY."
+L000016,2020-01-02,P-4012,pm_task,,Greased bearings as per PM.
+L000017,2020-01-03,FV-1015,operator_round,,"Positioner checked, signal OK."
+L000018,2020-01-03,K-3010,operator_round,,Strainer cleaned as per PM.
+L000019,2020-01-03,M-1012A,operator_round,,"Routine round, all normal."
+L000020,2020-01-03,M-2014A,pm_task,,"Running normal, standby checked."
+L000021,2020-01-03,M-4005,pm_task,,"PM completed, no findings."
+L000022,2020-01-03,M-5022A,operator_round,,Guard refitted after inspection.
+L000023,2020-01-03,P-4004A,pm_task,,Guard refitted after inspection.
+L000024,2020-01-03,P-4020A,operator_round,,"small drip at seal, stopped after flushing."
+L000025,2020-01-03,P-6032A,operator_round,,Oil topped up.
+L000026,2020-01-04,K-2003,operator_round,,"high vibration on NDE brg, trending up."
+L000027,2020-01-04,K-2009,pm_task,,Painting and insulation repair done.
+L000028,2020-01-04,K-5001,pm_task,,Guard refitted after inspection.
+L000029,2020-01-04,P-1016A,operator_round,,"Running normal, standby checked."
+L000030,2020-01-04,P-2015,pm_task,,"PM completed, no findings."
+L000031,2020-01-04,P-3036,operator_round,,Strainer cleaned as per PM.
+L000032,2020-01-04,P-3036,incident_report,,"Incident report: minor leak near P-3036, area barricaded."
+L000033,2020-01-04,P-6032A,operator_round,,Greased bearings as per PM.
+L000034,2020-01-05,FV-2023,pm_task,,Valve stroked full range OK.
+L000035,2020-01-05,FV-6025,operator_round,,"Checked, no abnormality."
+L000036,2020-01-05,K-3006,operator_round,,lube oil pressure low alarm cleared.
+L000037,2020-01-05,K-3006,pm_task,,Greased bearings as per PM.
+L000038,2020-01-05,K-5004,operator_round,,"Routine round, all nrml."
+L000039,2020-01-05,K-5011,pm_task,,Area housekeeping done.
+L000040,2020-01-05,K-6002,operator_round,,Oil topped up.
+L000041,2020-01-05,M-4009,operator_round,,"Checked, no abnormality."
+L000042,2020-01-05,M-4016A,pm_task,,"Running nrml, standby checked."
+L000043,2020-01-05,M-6019,pm_task,,Greased bearings as per PM.
+L000044,2020-01-05,P-2029,pm_task,,"Routine round, all nrml."
+L000045,2020-01-05,P-3017A,pm_task,,"PM completed, no findings."
+L000046,2020-01-05,P-4004A,pm_task,,"PM completed, no findings."
+L000047,2020-01-06,FV-1021,operator_round,,"Checked, no abnormality."
+L000048,2020-01-06,FV-4020,operator_round,,Valve stroked full range OK.
+L000049,2020-01-06,FV-6027,pm_task,,Area housekeeping done.
+L000050,2020-01-06,K-2003,operator_round,,noise from bearing housing.
+L000051,2020-01-06,K-3006,operator_round,,lube oil sample shows metal particles.
+L000052,2020-01-06,P-3033A,operator_round,,Strainer cleaned as per PM.
+L000053,2020-01-06,PT-5001,pm_task,,"Routine round, all normal."
+L000054,2020-01-07,FV-5013,pm_task,,"Positioner checked, signal OK."
+L000055,2020-01-07,K-2003,corrective_wo,breakdown,"Breakdown: brg failed, K-2003 stopped. Bearing repl."
+L000056,2020-01-07,K-2012,pm_task,,Greased bearings as per PM.
+L000057,2020-01-07,M-1023,operator_round,,"valve slow once, nrml on second stroke."
+L000058,2020-01-07,P-6018A,pm_task,,Oil topped up.
+L000059,2020-01-08,FV-1015,pm_task,,"POSITIONER CHECKED, SIGNAL OK."
+L000060,2020-01-08,K-6002,operator_round,,Painting and insulation repair done.
+L000061,2020-01-08,K-6007,pm_task,,"Routine round, all normal."
+L000062,2020-01-08,M-2003A,operator_round,,Greased bearings as per PM.
+L000063,2020-01-08,M-6019,operator_round,,Greased bearings as per PM.
+L000064,2020-01-08,P-1010A,pm_task,,Oil topped up.
+L000065,2020-01-08,P-1040A,pm_task,,"CHECKED, NO ABNORMALITY."
+L000066,2020-01-08,P-3039A,operator_round,,Greased bearings as per PM.
+L000067,2020-01-08,P-5011A,operator_round,,flow lower than normal at same opening.
+L000068,2020-01-09,FV-2023,operator_round,,"Routine round, all nrml."
+L000069,2020-01-09,FV-3003,pm_task,,Painting and insulation repair done.
+L000070,2020-01-09,FV-4006,pm_task,,"Positioner checked, signal OK."
+L000071,2020-01-09,FV-5016,operator_round,,"Positioner checked, signal OK."
+L000072,2020-01-09,K-2012,operator_round,,"Running normal, standby checked."
+L000073,2020-01-09,K-6002,operator_round,,"PM completed, no findings."
+L000074,2020-01-09,M-2015,pm_task,,OIL TOPPED UP.
+L000075,2020-01-09,P-2002A,pm_task,,"Running normal, standby checked."
+L000076,2020-01-09,P-4004A,pm_task,,"PM COMPLETED, NO FINDINGS."
+L000077,2020-01-09,PT-2007,operator_round,,Area housekeeping done.
+L000078,2020-01-09,PT-2013,operator_round,,"Checked, no abnormality."
+L000079,2020-01-09,PT-3009,pm_task,,"Zero check done, OK."
+L000080,2020-01-10,FV-1015,operator_round,,"Positioner checked, signal OK."
+L000081,2020-01-10,FV-2002,operator_round,,"Positioner checked, signal OK."
+L000082,2020-01-10,FV-6027,pm_task,,valve not following output below 20%.
+L000083,2020-01-10,K-5004,pm_task,,"Running normal, standby checked."
+L000084,2020-01-10,M-4005,pm_task,,Area housekeeping done.
+L000085,2020-01-10,M-4009,pm_task,,Area housekeeping done.
+L000086,2020-01-10,M-6019,operator_round,,"PM completed, no findings."
+L000087,2020-01-10,P-1040A,pm_task,,Strainer cleaned as per PM.
+L000088,2020-01-10,P-2006,operator_round,,"Running nrml, standby checked."
+L000089,2020-01-10,P-3033A,pm_task,,Guard refitted after inspection.
+L000090,2020-01-10,P-6024A,operator_round,,Painting and inuslation repair done.
+L000091,2020-01-10,P-6032A,operator_round,,"noise heard, found loose guard, tightened."
+L000092,2020-01-10,PT-1005,operator_round,,Area housekeeping done.
+L000093,2020-01-10,PT-1012,operator_round,,"PM completed, no findings."
+L000094,2020-01-10,PT-2011,operator_round,,transmitter reading noisy.
+L000095,2020-01-11,FV-1014,pm_task,,Area housekeeping done.
+L000096,2020-01-11,FV-3018,pm_task,,Valve stroked full range OK.
+L000097,2020-01-11,FV-5011,pm_task,,"Positioner checked, signal OK."
+L000098,2020-01-11,K-5008,pm_task,,"ROUTINE ROUND, ALL NORMAL."
+L000099,2020-01-11,M-1020,pm_task,,"Running nrml, standby checked."
+L000100,2020-01-11,M-4005,pm_task,,Area housekeeping done.
+L000101,2020-01-11,M-4011A,operator_round,,Guard refitted after inspection.
+L000102,2020-01-11,M-5024A,pm_task,,Painting and insulation repair done.
+L000103,2020-01-11,M-6013,pm_task,,Oil tpoped up.
+L000104,2020-01-11,P-1040A,pm_task,,"Routine round, all nrml."
+L000105,2020-01-11,P-2005,pm_task,,"PM completed, no findings."
+L000106,2020-01-11,P-4028A,pm_task,,Strainer cleaned as per PM.
+L000107,2020-01-11,PT-3016,operator_round,,Painting and insulation repair done.
+L000108,2020-01-12,K-2009,operator_round,,Guard refitted after inspection.
+L000109,2020-01-12,K-5011,operator_round,,"Routine round, all normal."
+L000110,2020-01-12,M-2014A,operator_round,,OIL TOPPED UP.
+L000111,2020-01-12,M-4007A,operator_round,,GUARD REFITTED AFTER INSPECTION.
+L000112,2020-01-12,P-1030A,pm_task,,"Running normal, standby checked."
+L000113,2020-01-12,P-1040A,operator_round,,"PM completed, no findings."
+L000114,2020-01-12,P-3017A,pm_task,,"Checked, no abnormality."
+L000115,2020-01-12,PT-1012,operator_round,,"Checked, no abnormality."
+L000116,2020-01-13,FV-1021,operator_round,,"Checked, no abnormality."
+L000117,2020-01-13,FV-1026,operator_round,,"PM completed, no findings."
+L000118,2020-01-13,FV-2002,pm_task,,Valve stroked full range OK.
+L000119,2020-01-13,FV-6027,pm_task,,valve not following output below 20%.
+L000120,2020-01-13,K-3006,pm_task,,"PM completed, no findings."
+L000121,2020-01-13,M-1002,operator_round,,"PM COMPLETED, NO FINDINGS."
+L000122,2020-01-13,PT-4006,pm_task,,"Zero check done, OK."
+L000123,2020-01-14,FV-3005,operator_round,,"PM completed, no findings."
+L000124,2020-01-14,FV-6001,operator_round,,"PM completed, no findings."
+L000125,2020-01-14,FV-6027,pm_task,,vlv not following output below 20%.
+L000126,2020-01-14,M-1023,pm_task,,Guard refitted after inspection.
+L000127,2020-01-14,M-2018A,pm_task,,"Checked, no abnormality."
+L000128,2020-01-14,M-6013,pm_task,,Area housekeeping done.
+L000129,2020-01-14,P-1040A,pm_task,,Painting and insulation repair done.
+L000130,2020-01-14,P-3033A,pm_task,,"ROUTINE ROUND, ALL NORMAL."
+L000131,2020-01-14,P-4007,pm_task,,Area housekeeping done.
+L000132,2020-01-14,P-4028A,operator_round,,GERASED BEARINGS AS PER PM.
+L000133,2020-01-15,FV-1028,operator_round,,Painting and insulation repair done.
+L000134,2020-01-15,K-5011,operator_round,,Area housekeeping done.
+L000135,2020-01-15,M-2018A,operator_round,,CURRENT IMBALANCE BETWEEN PHASES.
+L000136,2020-01-15,M-5024A,pm_task,,"Running normal, standby checked."
+L000137,2020-01-15,P-2002A,pm_task,,Oil topped up.
+L000138,2020-01-15,P-2029,operator_round,,"PM COMPLETED, NO FINDINGS."
+L000139,2020-01-15,P-5011A,operator_round,,FLOW LOWER THAN NORMAL AT SAME OPENING.
+L000140,2020-01-15,P-6018A,operator_round,,Painting and insulation repair done.
+L000141,2020-01-15,P-6024A,operator_round,,"small drip at seal, stopped after flushing."
+L000142,2020-01-15,PT-3016,pm_task,,"PM completed, no findings."
+L000143,2020-01-16,FV-1028,pm_task,,Valve stroked full range OK.
+L000144,2020-01-16,FV-4006,operator_round,,"noise heard, found loose guard, tightened."
+L000145,2020-01-16,FV-6001,pm_task,,PAINTING AND INSULATION REPAIR DONE.
+L000146,2020-01-16,K-3010,pm_task,,GREASED BEARINGS AS PER PM.
+L000147,2020-01-16,K-5004,pm_task,,"Routine round, all nrml."
+L000148,2020-01-16,K-5011,operator_round,,Guard refitted after inspection.
+L000149,2020-01-16,P-1010A,operator_round,,Area housekeeping done.
+L000150,2020-01-16,P-2027,operator_round,,"Routine round, all normal."
+L000151,2020-01-16,P-5011A,operator_round,,CRACKLING NOISE AT SUCTION.
+L000152,2020-01-16,PT-3016,operator_round,,"PM completed, no findings."
+L000153,2020-01-17,FV-1021,operator_round,,Painting and insulation repair done.
+L000154,2020-01-17,FV-1028,pm_task,,Area housekeeping done.
+L000155,2020-01-17,FV-2002,operator_round,,"Routine round, all nrml."
+L000156,2020-01-17,FV-5011,operator_round,,"Checked, no abnormality."
+L000157,2020-01-17,FV-6024,pm_task,,"ROUTINE ROUND, ALL NORMAL."
+L000158,2020-01-17,FV-6027,operator_round,,"valve sticking, stroke slow."
+L000159,2020-01-17,K-2009,operator_round,,Area housekeeping done.
+L000160,2020-01-17,M-1012A,pm_task,,GUARD REFITTED AFTER INSPECTION.
+L000161,2020-01-17,M-4011A,operator_round,,Greased bearings as per PM.
+L000162,2020-01-17,M-5004A,operator_round,,Painting and insulation reapir done.
+L000163,2020-01-17,P-3025A,operator_round,,"Routine round, all normal."
+L000164,2020-01-17,P-3037,pm_task,,Painting and insulation repair done.
+L000165,2020-01-17,P-5013A,pm_task,,"PM completed, no findings."
+L000166,2020-01-17,P-6003,pm_task,,"Checked, no abnormality."
+L000167,2020-01-17,P-6018A,operator_round,,Greased bearings as per PM.
+L000168,2020-01-17,PT-1012,pm_task,,Calibration within tolerance.
+L000169,2020-01-17,PT-3016,operator_round,,Painting and insulation repair done.
+L000170,2020-01-18,FV-1009,pm_task,,"valve sticking, stroke slow."
+L000171,2020-01-18,FV-1028,pm_task,,"Checked, no abnormality."
+L000172,2020-01-18,FV-3005,pm_task,,"Checked, no abnormality."
+L000173,2020-01-18,FV-6004,pm_task,,"Checked, no abnormality."
+L000174,2020-01-18,FV-6019,operator_round,,"vibration slightly high, rechecked normal."
+L000175,2020-01-18,FV-6027,pm_task,,valve not following output below 20%.
+L000176,2020-01-18,K-5001,operator_round,,"noise heard, found loose guard, tightened."
+L000177,2020-01-18,K-5004,pm_task,,STRAINER CLEANED AS PER PM.
+L000178,2020-01-18,M-6019,operator_round,,"Routine round, all normal."
+L000179,2020-01-18,P-2009,pm_task,,Painting and insulation repair done.
+L000180,2020-01-18,P-6018A,operator_round,,PAINTING AND INSULATION REPAIR DONE.
+L000181,2020-01-18,PT-1005,pm_task,,Area housekeeping done.
+L000182,2020-01-18,PT-2004,operator_round,,"PM completed, no findings."
+L000183,2020-01-19,FV-4006,operator_round,,AREA HOUSEKEEPING DONE.
+L000184,2020-01-19,FV-6001,pm_task,,"PM completed, no findings."
+L000185,2020-01-19,FV-6027,operator_round,,vlv not following output below 20%.
+L000186,2020-01-19,M-1020,pm_task,,Painting and insulation repair done.
+L000187,2020-01-19,M-4007A,pm_task,,Guard refitted after inspection.
+L000188,2020-01-19,P-2029,pm_task,,"Routine round, all normal."
+L000189,2020-01-19,P-3031,operator_round,,Oil topped up.
+L000190,2020-01-19,P-6019A,operator_round,,"small drip at seal, stopped after flushing."
+L000191,2020-01-20,FV-2002,operator_round,,Valve stroked full range OK.
+L000192,2020-01-20,FV-6027,corrective_wo,breakdown,"Breakdown: valve stuck, FV-6027 could not control. Actuator overhauled."
+L000193,2020-01-20,M-1020,operator_round,,"small drip at seal, stopped after flushing."
+L000194,2020-01-20,M-1023,pm_task,,Painting and insulation repair done.
+L000195,2020-01-20,M-2010A,pm_task,,Painting and insulation repair done.
+L000196,2020-01-20,P-4007,pm_task,,"CHECKED, NO ABNORMALITY."
+L000197,2020-01-20,P-4012,operator_round,,Greased bearings as per PM.
+L000198,2020-01-20,PT-2011,operator_round,,intermittent bad PV.
+L000199,2020-01-21,FV-3008,operator_round,,"SMALL DRIP AT SEAL, STOPPED AFTER FLUSHING."
+L000200,2020-01-21,FV-6004,operator_round,,Valve stroked full range OK.

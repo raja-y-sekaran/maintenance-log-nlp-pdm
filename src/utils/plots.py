@@ -9,7 +9,8 @@ import numpy as np
 import pandas as pd
 from sklearn.metrics import average_precision_score, precision_recall_curve
 
-from .pipeline import DOCS, TOP_K
+from src.utils.paths import FIGURES as DOCS
+from src.models.evaluate import TOP_K
 
 INK, MUTED, GRID = "#0b0b0b", "#52514e", "#e4e3df"
 COLORS = {"Keyword count": "#eda100", "History only (no text)": "#1baf7a",

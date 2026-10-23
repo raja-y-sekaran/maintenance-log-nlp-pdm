@@ -4,11 +4,12 @@ from pathlib import Path
 import numpy as np
 import pandas as pd
 
-sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "src"))
+sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
 
-from pdm_nlp.features import build_snapshots, clean, learn_typo_fixes  # noqa: E402
-from pdm_nlp.models import entry_ngrams, keyword_score  # noqa: E402
-from pdm_nlp.pipeline import HORIZON, split  # noqa: E402
+from src.data.preprocess import clean, learn_typo_fixes  # noqa: E402
+from src.features.snapshots import build_snapshots  # noqa: E402
+from src.models.rankers import entry_ngrams, keyword_score  # noqa: E402
+from src.models.evaluate import HORIZON, split  # noqa: E402
 
 REG = pd.DataFrame([dict(asset_id="P-1001", asset_type="pump", unit="U10", criticality="A", install_year=2010)])
 

@@ -1,0 +1,7 @@
+{
+  "model": "TF-IDF (in-entry word pairs) -> SVD + history features -> LightGBM; logistic model kept for evidence",
+  "trained_on": "36120 weekly asset snapshots from synthetic logs",
+  "output": "risk score for ranking assets (not a calibrated probability)",
+  "trained": "2026-10-23",
+  "note": "Synthetic data only. Retrain and re-validate on the plant's own history before any use."
+}

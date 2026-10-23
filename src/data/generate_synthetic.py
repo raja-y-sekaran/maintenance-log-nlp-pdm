@@ -11,7 +11,7 @@ Hidden process per asset:
     breakdown follows. In a plant that is a success, and it is what a "false alarm" often is.
   * Healthy assets still get the odd symptom-like remark ("vib slightly high, rechecked normal").
 
-Usage:  python data/generate_synthetic.py [--seed 42]
+Usage:  python -m src.data.generate_synthetic [--seed 42]
 """
 from __future__ import annotations
 
@@ -23,7 +23,7 @@ from pathlib import Path
 
 import pandas as pd
 
-OUT = Path(__file__).resolve().parent
+OUT = Path(__file__).resolve().parents[2] / "data" / "raw"
 START, YEARS = date(2020, 1, 1), 6
 DAYS = 365 * YEARS + 1
 
@@ -200,11 +200,13 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--seed", type=int, default=42)
     reg, logs, failures, ep = generate(ap.parse_args().seed)
-    (OUT / "ground_truth").mkdir(exist_ok=True)
+    (OUT / "ground_truth").mkdir(parents=True, exist_ok=True)
     reg.to_csv(OUT / "asset_register.csv", index=False)
     logs.to_csv(OUT / "maintenance_logs.csv", index=False)
     ep.to_csv(OUT / "ground_truth" / "degradation_episodes.csv", index=False)
     failures.to_csv(OUT / "ground_truth" / "failure_modes.csv", index=False)
+    (OUT.parent / "sample").mkdir(exist_ok=True)
+    logs.head(200).to_csv(OUT.parent / "sample" / "maintenance_logs_sample.csv", index=False)
     print(f"{len(reg)} assets, {len(logs)} log entries, {len(failures)} breakdowns, "
           f"{(ep.outcome == 'fixed').sum()} degradations fixed before breakdown")
 

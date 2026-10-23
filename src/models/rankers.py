@@ -14,7 +14,7 @@ from sklearn.linear_model import LogisticRegression
 from sklearn.pipeline import Pipeline
 from sklearn.preprocessing import OneHotEncoder, StandardScaler
 
-from .features import NUMERIC
+from src.features.snapshots import NUMERIC
 
 _TOKEN = re.compile(r"(?u)\b[a-z][a-z/]+\b")
 
