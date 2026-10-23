@@ -1,0 +1,84 @@
+{
+  "snapshots": 36120,
+  "assets": 120,
+  "log_entries": 19780,
+  "test_period": "2024-01-01 to 2025-11-30",
+  "test_base_rate": 0.0451,
+  "validation_pr_auc": {
+    "Keyword count": 0.111,
+    "History only (no text)": 0.102,
+    "Text + history, logistic": 0.242,
+    "Text + history, LightGBM": 0.303
+  },
+  "chosen_model": "Text + history, LightGBM",
+  "test_pr_auc": {
+    "Keyword count": 0.155,
+    "History only (no text)": 0.151,
+    "Text + history, logistic": 0.366,
+    "Text + history, LightGBM": 0.38
+  },
+  "test_precision_at_k": {
+    "Keyword count": 0.197,
+    "History only (no text)": 0.182,
+    "Text + history, logistic": 0.301,
+    "Text + history, LightGBM": 0.327
+  },
+  "test_breakdowns_caught": {
+    "Keyword count": {
+      "all": "78 of 131",
+      "with_warning_in_text": "73 of 97",
+      "sudden": "5 of 34",
+      "median_lead_days": 15.0,
+      "false_alarms_inside_repaired_degradation": 0.167
+    },
+    "History only (no text)": {
+      "all": "77 of 131",
+      "with_warning_in_text": "69 of 97",
+      "sudden": "8 of 34",
+      "median_lead_days": 17.0,
+      "false_alarms_inside_repaired_degradation": 0.141
+    },
+    "Text + history, logistic": {
+      "all": "99 of 131",
+      "with_warning_in_text": "92 of 97",
+      "sudden": "7 of 34",
+      "median_lead_days": 23.0,
+      "false_alarms_inside_repaired_degradation": 0.306
+    },
+    "Text + history, LightGBM": {
+      "all": "103 of 131",
+      "with_warning_in_text": "93 of 97",
+      "sudden": "10 of 34",
+      "median_lead_days": 24.0,
+      "false_alarms_inside_repaired_degradation": 0.321
+    }
+  },
+  "top_warning_terms": [
+    "recent: bad (+2.99)",
+    "recent: temperature (+2.69)",
+    "recent: increasing (+2.39)",
+    "recent: bearing (+2.25)",
+    "recent: leak increasing (+1.93)",
+    "recent: low (+1.85)",
+    "recent: than (+1.72)",
+    "recent: opening (+1.72)",
+    "days 15-60: bearing (+1.66)",
+    "recent: discharge (+1.66)",
+    "days 15-60: at (+1.63)",
+    "recent: trending (+1.61)"
+  ],
+  "top_reassuring_terms": [
+    "recent: breakdown (-4.21)",
+    "recent: corrective (-3.92)",
+    "recent: replaced (-2.83)",
+    "days 15-60: corrective (-2.39)",
+    "recent: replaced on (-1.53)",
+    "recent: failed (-1.38)",
+    "recent: stopped (-1.38)",
+    "recent: bearing replaced (-1.37)",
+    "days 15-60: replaced (-1.28)",
+    "recent: slightly high (-1.23)",
+    "recent: overhauled (-1.21)",
+    "recent: isolated (-1.19)"
+  ]
+}

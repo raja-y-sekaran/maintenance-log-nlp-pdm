@@ -1,0 +1,11 @@
+asset_id,asset_type,criticality,risk,days_since_corrective,evidence_last_60_days,actually_broke_down_within_30d
+P-3033A,pump,C,0.945,999.0,discharge pressure fluctuating. / painting and insulation repair done.,1
+K-5011,compressor,B,0.941,999.0,discharge temperature high. / discharge temperature high. / discharge temperature high.,1
+P-1022,pump,C,0.898,999.0,lube oil looks discoloured. / oil topped up.,1
+PT-3003,transmitter,A,0.89,149.0,"manifold valve leaking. / impulse line partly plugged, slow response.",1
+PT-3016,transmitter,B,0.847,999.0,"impulse line weeping at fitting. / zero check done, ok. / checked, no abnormality.",1
+FV-3003,control_valve,C,0.461,483.0,"stem leak increasing. / packing retightened, still weeping. / packing retightened, still weeping.",1
+P-3025A,pump,B,0.329,161.0,seal flush line running hot. / seal flush line running hot. / seal flush line running hot.,0
+P-3021,pump,A,0.258,999.0,"running normal, standby checked.",0
+FV-5013,control_valve,B,0.256,526.0,"noise heard, found loose guard, tightened. / routine round, all normal.",0
+P-6018A,pump,A,0.246,999.0,"routine round, all normal.",1
