@@ -2,7 +2,7 @@
 
 **Read the free-text remarks in work orders, operator rounds and incident reports, and give the maintenance planner a weekly list of the assets most likely to break down in the next 30 days, with the log lines that put each one there.**
 
-![CI](https://github.com/rajapune-create/maintenance-log-nlp-pdm/actions/workflows/ci.yml/badge.svg)
+![CI](https://github.com/raja-y-sekaran/maintenance-log-nlp-pdm/actions/workflows/ci.yml/badge.svg)
 
 ![Precision-recall on the test years](reports/figures/precision_recall.png)
 
